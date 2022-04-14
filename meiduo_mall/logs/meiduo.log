@@ -1,0 +1,2 @@
+INFO 2022-04-14 07:22:16,795 autoreload 9575 140303504635712 Watching for file changes with StatReloader
+INFO 2022-04-14 07:22:21,334 basehttp 9575 140303446263552 "GET / HTTP/1.1" 200 10697
