@@ -1,9 +1,8 @@
-INFO 2022-04-14 07:22:16,795 autoreload 9575 140303504635712 Watching for file changes with StatReloader
-INFO 2022-04-14 07:22:21,334 basehttp 9575 140303446263552 "GET / HTTP/1.1" 200 10697
-INFO 2022-04-14 07:44:24,226 autoreload 9948 139836736984896 Watching for file changes with StatReloader
-INFO 2022-04-14 07:44:28,615 basehttp 9948 139836678612736 "GET / HTTP/1.1" 200 10697
-INFO 2022-04-14 08:51:54,570 autoreload 12240 140025607599936 Watching for file changes with StatReloader
-INFO 2022-04-14 08:52:14,280 basehttp 12240 140025162598144 "GET / HTTP/1.1" 200 10697
-WARNING 2022-04-14 08:52:14,728 log 12240 140025162598144 Not Found: /favicon.ico
-INFO 2022-04-14 08:52:14,795 basehttp 12240 140025154205440 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
-INFO 2022-04-14 08:52:14,819 basehttp 12240 140025154205440 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2022-04-15 07:41:40,580 autoreload 7388 140617116010304 Watching for file changes with StatReloader
+INFO 2022-04-15 07:45:04,989 autoreload 7696 139667684927296 Watching for file changes with StatReloader
+INFO 2022-04-15 07:50:51,939 autoreload 8474 139813329745728 Watching for file changes with StatReloader
+INFO 2022-04-15 07:51:21,601 autoreload 8474 139813329745728 /home/tracy/tracy_git_test/meiduo_mall/meiduo_mall/settings.py changed, reloading.
+INFO 2022-04-15 07:51:23,449 autoreload 8533 140020816381760 Watching for file changes with StatReloader
+INFO 2022-04-15 07:53:16,273 autoreload 8806 139718955517760 Watching for file changes with StatReloader
+INFO 2022-04-15 07:57:13,061 autoreload 8938 139933953828672 Watching for file changes with StatReloader
+INFO 2022-04-15 07:57:17,846 basehttp 8938 139933895456512 "GET / HTTP/1.1" 200 10697

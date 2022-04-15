@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 import os
 from pathlib import Path
-from tabnanny import verbose
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-l0=#up&2&uv9)ct%n@63qk&uf(qgb^uge2wtnlp6lgqvi_)@!g'
+SECRET_KEY = 'django-insecure-za!f-k&fs%lz#-o$hu(4n8guwq6&4i09ivua036w-*dohg+e72'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -39,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'apps.user'
 ]
 
 MIDDLEWARE = [
@@ -82,7 +82,7 @@ DATABASES = {
         'POST': 3306,
         'USER': 'root',
         'PASSWORD': '123456',
-        'NAME': 'tracy_01',
+        'NAME': 'meiduo_mall',
     }
 }
 
@@ -128,8 +128,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
-#django-redis config
+# 配置 session
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
@@ -139,11 +138,11 @@ CACHES = {
         }
     }
 }
+
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "default"
 
-
-#log config
+# 配置 log日志
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -186,3 +185,6 @@ LOGGING = {
         },
     }
 }
+
+# 替换系统user表
+AUTH_USER_MODEL = 'user.User'
