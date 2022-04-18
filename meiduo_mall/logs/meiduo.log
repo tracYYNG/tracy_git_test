@@ -6,3 +6,208 @@ INFO 2022-04-15 07:51:23,449 autoreload 8533 140020816381760 Watching for file c
 INFO 2022-04-15 07:53:16,273 autoreload 8806 139718955517760 Watching for file changes with StatReloader
 INFO 2022-04-15 07:57:13,061 autoreload 8938 139933953828672 Watching for file changes with StatReloader
 INFO 2022-04-15 07:57:17,846 basehttp 8938 139933895456512 "GET / HTTP/1.1" 200 10697
+INFO 2022-04-15 09:05:22,222 autoreload 9485 140087987656512 Watching for file changes with StatReloader
+INFO 2022-04-15 09:09:09,208 autoreload 9995 140113572312896 Watching for file changes with StatReloader
+WARNING 2022-04-15 09:15:05,293 log 9995 140113261549312 Not Found: /username/tracy/count/
+WARNING 2022-04-15 09:15:05,297 basehttp 9995 140113261549312 "GET /username/tracy/count/ HTTP/1.1" 404 2323
+WARNING 2022-04-15 09:16:54,241 log 9995 140113261549312 Not Found: /
+WARNING 2022-04-15 09:16:54,249 basehttp 9995 140113261549312 "GET / HTTP/1.1" 404 2242
+INFO 2022-04-15 09:17:29,342 basehttp 9995 140113253156608 "GET /username/tracy/count HTTP/1.1" 200 39
+INFO 2022-04-15 09:21:33,112 basehttp 9995 140113253156608 "GET /username/tracy/count HTTP/1.1" 200 39
+WARNING 2022-04-15 09:24:39,337 log 9995 140113261549312 Not Found: /
+WARNING 2022-04-15 09:24:39,343 basehttp 9995 140113261549312 "GET / HTTP/1.1" 404 2242
+INFO 2022-04-16 05:20:53,845 autoreload 2701 139890878404416 Watching for file changes with StatReloader
+WARNING 2022-04-16 05:21:39,497 log 2701 139890820032256 Not Found: /
+WARNING 2022-04-16 05:21:39,500 basehttp 2701 139890820032256 "GET / HTTP/1.1" 404 2242
+INFO 2022-04-16 05:22:24,755 basehttp 2701 139890820032256 "GET /admin HTTP/1.1" 301 0
+INFO 2022-04-16 05:22:24,799 basehttp 2701 139890820032256 "GET /admin/ HTTP/1.1" 302 0
+INFO 2022-04-16 05:22:24,898 basehttp 2701 139890820032256 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+WARNING 2022-04-16 05:22:53,466 log 2701 139890820032256 Not Found: /username/tracy/count/
+WARNING 2022-04-16 05:22:53,468 basehttp 2701 139890820032256 "GET /username/tracy/count/ HTTP/1.1" 404 2323
+INFO 2022-04-16 05:23:18,767 basehttp 2701 139890820032256 "GET /username/abc/count HTTP/1.1" 200 39
+WARNING 2022-04-16 05:23:29,511 log 2701 139890820032256 Not Found: /username/abc/count/
+WARNING 2022-04-16 05:23:29,515 basehttp 2701 139890820032256 "GET /username/abc/count/ HTTP/1.1" 404 2317
+INFO 2022-04-18 05:58:53,014 autoreload 4416 140586958014272 Watching for file changes with StatReloader
+INFO 2022-04-18 05:59:08,325 autoreload 4416 140586958014272 /home/tracy/tracy_git_test/meiduo_mall/apps/user/urls.py changed, reloading.
+INFO 2022-04-18 05:59:09,207 autoreload 4567 140191123760960 Watching for file changes with StatReloader
+INFO 2022-04-18 05:59:21,609 autoreload 4677 140235527292736 Watching for file changes with StatReloader
+WARNING 2022-04-18 05:59:38,572 log 4677 140235468658432 Not Found: /username/abc/count/
+WARNING 2022-04-18 05:59:38,577 basehttp 4677 140235468658432 "GET /username/abc/count/ HTTP/1.1" 404 2323
+WARNING 2022-04-18 06:00:18,093 log 4677 140235468658432 Not Found: /username/abcbfd/count/
+WARNING 2022-04-18 06:00:18,096 basehttp 4677 140235468658432 "GET /username/abcbfd/count/ HTTP/1.1" 404 2332
+INFO 2022-04-18 06:02:50,856 autoreload 4677 140235527292736 /home/tracy/tracy_git_test/meiduo_mall/apps/user/urls.py changed, reloading.
+INFO 2022-04-18 06:02:51,459 autoreload 4745 140623033624384 Watching for file changes with StatReloader
+INFO 2022-04-18 06:03:08,266 basehttp 4745 140622975252224 "GET /username/abcbfd/count/ HTTP/1.1" 200 39
+INFO 2022-04-18 06:04:22,567 autoreload 4745 140623033624384 /home/tracy/tracy_git_test/meiduo_mall/apps/user/urls.py changed, reloading.
+INFO 2022-04-18 06:04:23,124 autoreload 4786 140024636438336 Watching for file changes with StatReloader
+INFO 2022-04-18 06:04:32,406 autoreload 4786 140024636438336 /home/tracy/tracy_git_test/meiduo_mall/apps/user/urls.py changed, reloading.
+INFO 2022-04-18 06:04:32,764 autoreload 4798 140410387322688 Watching for file changes with StatReloader
+INFO 2022-04-18 06:04:37,633 basehttp 4798 140410328950528 "GET /username/abcbfd/count/ HTTP/1.1" 200 39
+WARNING 2022-04-18 06:05:21,296 log 4798 140410328950528 Not Found: /username/abcb/count/
+WARNING 2022-04-18 06:05:21,299 basehttp 4798 140410328950528 "GET /username/abcb/count/ HTTP/1.1" 404 2326
+INFO 2022-04-18 06:05:29,790 basehttp 4798 140410328950528 "GET /username/abc4b/count/ HTTP/1.1" 200 39
+INFO 2022-04-18 06:06:55,127 autoreload 4798 140410387322688 /home/tracy/tracy_git_test/meiduo_mall/apps/user/urls.py changed, reloading.
+INFO 2022-04-18 06:06:55,979 autoreload 4846 140332801955648 Watching for file changes with StatReloader
+INFO 2022-04-18 06:14:55,067 autoreload 4846 140332801955648 /home/tracy/tracy_git_test/meiduo_mall/apps/user/urls.py changed, reloading.
+INFO 2022-04-18 06:14:55,612 autoreload 4943 139881931470656 Watching for file changes with StatReloader
+INFO 2022-04-18 06:15:17,037 autoreload 4943 139881931470656 /home/tracy/tracy_git_test/meiduo_mall/apps/user/urls.py changed, reloading.
+INFO 2022-04-18 06:15:17,389 autoreload 4954 140281943136064 Watching for file changes with StatReloader
+INFO 2022-04-18 06:17:01,366 autoreload 4954 140281943136064 /home/tracy/tracy_git_test/meiduo_mall/apps/user/urls.py changed, reloading.
+INFO 2022-04-18 06:17:01,862 autoreload 5000 139903653787456 Watching for file changes with StatReloader
+INFO 2022-04-18 06:21:09,737 autoreload 5000 139903653787456 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-18 06:21:10,236 autoreload 5141 140496229873472 Watching for file changes with StatReloader
+INFO 2022-04-18 06:21:47,678 autoreload 5141 140496229873472 /home/tracy/tracy_git_test/meiduo_mall/apps/user/urls.py changed, reloading.
+INFO 2022-04-18 06:21:48,164 autoreload 5169 139713897940800 Watching for file changes with StatReloader
+INFO 2022-04-18 06:22:08,056 autoreload 5184 139987203450688 Watching for file changes with StatReloader
+WARNING 2022-04-18 06:22:33,805 log 5184 139987077035776 Not Found: /mobile/13888888888/count/
+WARNING 2022-04-18 06:22:33,809 basehttp 5184 139987077035776 "GET /mobile/13888888888/count/ HTTP/1.1" 404 2525
+ERROR 2022-04-18 06:22:50,908 log 5184 139987077035776 Internal Server Error: /mobiles/13888888888/count/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: get() got an unexpected keyword argument 'mobiles'
+ERROR 2022-04-18 06:22:50,915 basehttp 5184 139987077035776 "GET /mobiles/13888888888/count/ HTTP/1.1" 500 70514
+INFO 2022-04-18 06:24:30,109 autoreload 5344 140420453373760 Watching for file changes with StatReloader
+INFO 2022-04-18 06:24:36,490 basehttp 5344 140420142589696 "GET /mobiles/13888888888/count/ HTTP/1.1" 200 39
+WARNING 2022-04-18 06:24:48,119 log 5344 140420142589696 Not Found: /mobiles/1388888888/count/
+WARNING 2022-04-18 06:24:48,125 basehttp 5344 140420142589696 "GET /mobiles/1388888888/count/ HTTP/1.1" 404 2525
+INFO 2022-04-18 06:25:05,805 basehttp 5344 140420142589696 "GET /mobiles/13312345678/count/ HTTP/1.1" 200 39
+INFO 2022-04-18 07:11:18,907 autoreload 6093 140078072145728 Watching for file changes with StatReloader
+INFO 2022-04-18 07:16:02,725 autoreload 6093 140078072145728 /home/tracy/tracy_git_test/meiduo_mall/meiduo_mall/settings.py changed, reloading.
+INFO 2022-04-18 07:16:04,985 autoreload 6219 139820751615808 Watching for file changes with StatReloader
+ERROR 2022-04-18 07:17:49,529 log 6219 139820236846848 Internal Server Error: /user/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 32, in post
+    body_base = request.bady()
+AttributeError: 'WSGIRequest' object has no attribute 'bady'
+ERROR 2022-04-18 07:17:49,536 basehttp 6219 139820236846848 "POST /user/ HTTP/1.1" 500 75015
+INFO 2022-04-18 07:19:35,642 autoreload 6219 139820751615808 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-18 07:19:37,592 autoreload 6395 139702855878464 Watching for file changes with StatReloader
+ERROR 2022-04-18 07:19:42,191 log 6395 139702679328512 Internal Server Error: /user/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 32, in post
+    body_base = request.body()
+TypeError: 'bytes' object is not callable
+ERROR 2022-04-18 07:19:42,200 basehttp 6395 139702679328512 "POST /user/ HTTP/1.1" 500 74889
+INFO 2022-04-18 07:24:16,006 autoreload 6631 140252715693888 Watching for file changes with StatReloader
+ERROR 2022-04-18 07:24:19,693 log 6631 140252270642944 Internal Server Error: /user/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 34, in post
+    body_json = body_str.loads()
+AttributeError: 'str' object has no attribute 'loads'
+ERROR 2022-04-18 07:24:19,702 basehttp 6631 140252270642944 "POST /user/ HTTP/1.1" 500 75840
+INFO 2022-04-18 07:24:56,257 autoreload 6631 140252715693888 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-18 07:24:58,047 autoreload 6728 140548959876928 Watching for file changes with StatReloader
+INFO 2022-04-18 07:25:03,038 basehttp 6728 140548509792000 "POST /user/ HTTP/1.1" 200 27
+ERROR 2022-04-18 07:27:13,263 log 6728 140548509792000 Internal Server Error: /user/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry 'tracy01' for key 'tb_users.username'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 67, in post
+    User.objects.create_user(username=username,password=password,mobiles=mobile)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/contrib/auth/models.py", line 160, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/contrib/auth/models.py", line 154, in _create_user
+    user.save(using=self._db)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/contrib/auth/base_user.py", line 68, in save
+    super().save(*args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/base.py", line 806, in save
+    self.save_base(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/base.py", line 857, in save_base
+    updated = self._save_table(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'tracy01' for key 'tb_users.username'")
+ERROR 2022-04-18 07:27:13,283 basehttp 6728 140548509792000 "POST /user/ HTTP/1.1" 500 200872
+INFO 2022-04-18 07:28:13,619 basehttp 6728 140548509792000 "POST /user/ HTTP/1.1" 200 75
+INFO 2022-04-18 07:39:27,289 autoreload 6728 140548959876928 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-18 07:39:29,087 autoreload 7020 140310236485440 Watching for file changes with StatReloader
+INFO 2022-04-18 07:39:34,972 basehttp 7020 140309791471360 "POST /user/ HTTP/1.1" 200 75
+INFO 2022-04-18 07:39:48,826 autoreload 7020 140310236485440 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-18 07:39:50,922 autoreload 7132 139784926299968 Watching for file changes with StatReloader
+INFO 2022-04-18 07:40:36,343 basehttp 7132 139784475375360 "POST /user/ HTTP/1.1" 200 81
+INFO 2022-04-18 07:40:53,798 basehttp 7132 139784475375360 "POST /user/ HTTP/1.1" 200 51
+INFO 2022-04-18 08:01:49,578 autoreload 7132 139784926299968 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-18 08:01:51,450 autoreload 7469 140206004123456 Watching for file changes with StatReloader
+INFO 2022-04-18 08:08:38,887 autoreload 7469 140206004123456 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-18 08:08:40,814 autoreload 8380 139836029171520 Watching for file changes with StatReloader
+INFO 2022-04-18 08:08:53,434 basehttp 8380 139835584136960 "POST /user/ HTTP/1.1" 200 27
