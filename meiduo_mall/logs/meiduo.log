@@ -211,3 +211,50 @@ INFO 2022-04-18 08:01:51,450 autoreload 7469 140206004123456 Watching for file c
 INFO 2022-04-18 08:08:38,887 autoreload 7469 140206004123456 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
 INFO 2022-04-18 08:08:40,814 autoreload 8380 139836029171520 Watching for file changes with StatReloader
 INFO 2022-04-18 08:08:53,434 basehttp 8380 139835584136960 "POST /user/ HTTP/1.1" 200 27
+INFO 2022-04-18 08:40:42,958 autoreload 8380 139836029171520 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-18 08:40:45,499 autoreload 8819 139857866852160 Watching for file changes with StatReloader
+INFO 2022-04-19 07:08:50,527 autoreload 12036 140130375558976 Watching for file changes with StatReloader
+INFO 2022-04-19 07:13:43,705 autoreload 12219 140053780436800 Watching for file changes with StatReloader
+INFO 2022-04-19 07:15:03,563 autoreload 12386 139899918583616 Watching for file changes with StatReloader
+INFO 2022-04-19 07:18:25,332 autoreload 12564 140056179472192 Watching for file changes with StatReloader
+INFO 2022-04-19 07:28:04,558 autoreload 12833 139880026560320 Watching for file changes with StatReloader
+INFO 2022-04-19 07:32:49,904 autoreload 13033 139792716871488 Watching for file changes with StatReloader
+INFO 2022-04-19 07:35:04,257 autoreload 13148 140277284640576 Watching for file changes with StatReloader
+INFO 2022-04-19 07:39:21,338 autoreload 13445 140023372277568 Watching for file changes with StatReloader
+INFO 2022-04-19 07:40:24,210 basehttp 13445 140022846060288 "POST /user/ HTTP/1.1" 200 27
+INFO 2022-04-19 07:41:35,589 basehttp 13445 140022846060288 "POST /user/ HTTP/1.1" 200 27
+INFO 2022-04-19 07:46:11,891 autoreload 14007 140702724953920 Watching for file changes with StatReloader
+INFO 2022-04-19 07:54:28,730 autoreload 14221 140100161304384 Watching for file changes with StatReloader
+INFO 2022-04-19 07:55:45,897 autoreload 14372 139943845877568 Watching for file changes with StatReloader
+INFO 2022-04-19 07:56:06,303 autoreload 14508 139777605535552 Watching for file changes with StatReloader
+INFO 2022-04-19 07:56:35,670 autoreload 14645 140142066329408 Watching for file changes with StatReloader
+INFO 2022-04-19 07:57:22,805 autoreload 14645 140142066329408 /home/tracy/tracy_git_test/meiduo_mall/meiduo_mall/settings.py changed, reloading.
+INFO 2022-04-19 07:57:24,589 autoreload 14714 140641430021952 Watching for file changes with StatReloader
+INFO 2022-04-19 07:58:37,992 autoreload 14885 140478557501248 Watching for file changes with StatReloader
+INFO 2022-04-19 08:00:51,595 autoreload 14885 140478557501248 /home/tracy/tracy_git_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+INFO 2022-04-19 08:00:53,408 autoreload 15013 140617923585856 Watching for file changes with StatReloader
+INFO 2022-04-19 08:01:26,513 autoreload 15013 140617923585856 /home/tracy/tracy_git_test/meiduo_mall/apps/verifications/urls.py changed, reloading.
+INFO 2022-04-19 08:01:28,333 autoreload 15101 140614259377984 Watching for file changes with StatReloader
+WARNING 2022-04-19 08:02:13,219 log 15101 140613806716672 Not Found: /
+WARNING 2022-04-19 08:02:13,221 basehttp 15101 140613806716672 "GET / HTTP/1.1" 404 2756
+WARNING 2022-04-19 08:02:13,634 log 15101 140613806716672 Not Found: /favicon.ico
+WARNING 2022-04-19 08:02:13,635 basehttp 15101 140613806716672 "GET /favicon.ico HTTP/1.1" 404 2807
+ERROR 2022-04-19 08:03:21,695 log 15101 140613806716672 Internal Server Error: /image/a11212f8-e1e4-4eb8-8cb6-51731b03e953/count/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/verifications/views.py", line 13, in get
+    text,image = Captcha.generate_captcha();
+TypeError: generate_captcha() missing 1 required positional argument: 'self'
+ERROR 2022-04-19 08:03:21,701 basehttp 15101 140613806716672 "GET /image/a11212f8-e1e4-4eb8-8cb6-51731b03e953/count/ HTTP/1.1" 500 77351
+INFO 2022-04-19 08:06:45,072 autoreload 15101 140614259377984 /home/tracy/tracy_git_test/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2022-04-19 08:06:47,276 autoreload 15368 140703041500992 Watching for file changes with StatReloader
+INFO 2022-04-19 08:06:54,746 basehttp 15368 140702591743744 "GET /image/a11212f8-e1e4-4eb8-8cb6-51731b03e953/count/ HTTP/1.1" 200 3334
+INFO 2022-04-19 08:07:07,177 basehttp 15368 140702591743744 "GET /image/a11212f8-e1e4-4eb8-8cb6-51731b03e953/count/ HTTP/1.1" 200 3158
+INFO 2022-04-19 08:07:09,267 basehttp 15368 140702591743744 "GET /image/a11212f8-e1e4-4eb8-8cb6-51731b03e953/count/ HTTP/1.1" 200 3389
