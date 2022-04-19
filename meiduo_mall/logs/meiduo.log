@@ -258,3 +258,5 @@ INFO 2022-04-19 08:06:47,276 autoreload 15368 140703041500992 Watching for file 
 INFO 2022-04-19 08:06:54,746 basehttp 15368 140702591743744 "GET /image/a11212f8-e1e4-4eb8-8cb6-51731b03e953/count/ HTTP/1.1" 200 3334
 INFO 2022-04-19 08:07:07,177 basehttp 15368 140702591743744 "GET /image/a11212f8-e1e4-4eb8-8cb6-51731b03e953/count/ HTTP/1.1" 200 3158
 INFO 2022-04-19 08:07:09,267 basehttp 15368 140702591743744 "GET /image/a11212f8-e1e4-4eb8-8cb6-51731b03e953/count/ HTTP/1.1" 200 3389
+INFO 2022-04-19 08:10:12,158 autoreload 15368 140703041500992 /home/tracy/tracy_git_test/meiduo_mall/apps/verifications/urls.py changed, reloading.
+INFO 2022-04-19 08:10:15,505 autoreload 15612 140335350863680 Watching for file changes with StatReloader
