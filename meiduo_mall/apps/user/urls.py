@@ -2,17 +2,19 @@
 from django.urls import path, register_converter
 from apps.user.views import MobileCountView, RegisterView, UsernameCountView
 
-class UserConverter:
-    regex = "[0-9A-Za-z]{5,20}"
+from utils.converter import UserConverter,MobileConverter
 
-    def to_python(self, value):
-        return value
+# class UserConverter:
+#     regex = "[0-9A-Za-z]{5,20}"
 
-class MobileConverter:
-    regex = "(13[0-9]|14[01456879]|15[0-35-9]|16[2567]|17[0-8]|18[0-9]|19[0-35-9])\d{8}"
+#     def to_python(self, value):
+#         return value
 
-    def to_python(self, value):
-        return value
+# class MobileConverter:
+#     regex = "(13[0-9]|14[01456879]|15[0-35-9]|16[2567]|17[0-8]|18[0-9]|19[0-35-9])\d{8}"
+
+#     def to_python(self, value):
+#         return value
 
 register_converter(UserConverter,'user')
 register_converter(MobileConverter,'mobile')

@@ -260,3 +260,36 @@ INFO 2022-04-19 08:07:07,177 basehttp 15368 140702591743744 "GET /image/a11212f8
 INFO 2022-04-19 08:07:09,267 basehttp 15368 140702591743744 "GET /image/a11212f8-e1e4-4eb8-8cb6-51731b03e953/count/ HTTP/1.1" 200 3389
 INFO 2022-04-19 08:10:12,158 autoreload 15368 140703041500992 /home/tracy/tracy_git_test/meiduo_mall/apps/verifications/urls.py changed, reloading.
 INFO 2022-04-19 08:10:15,505 autoreload 15612 140335350863680 Watching for file changes with StatReloader
+INFO 2022-04-20 05:46:03,853 autoreload 14577 139666048440128 Watching for file changes with StatReloader
+INFO 2022-04-20 05:46:37,521 autoreload 14716 139784608016192 Watching for file changes with StatReloader
+WARNING 2022-04-20 05:47:36,475 log 14716 139784297207552 Not Found: /username/abc/count/
+WARNING 2022-04-20 05:47:36,483 basehttp 14716 139784297207552 "GET /username/abc/count/ HTTP/1.1" 404 2831
+INFO 2022-04-20 05:48:37,561 basehttp 14716 139784297207552 "GET /username/abcdefg/count/ HTTP/1.1" 200 39
+INFO 2022-04-20 05:52:31,812 autoreload 14716 139784608016192 /home/tracy/tracy_git_test/meiduo_mall/apps/verifications/urls.py changed, reloading.
+INFO 2022-04-20 05:52:34,795 autoreload 15202 140577539450688 Watching for file changes with StatReloader
+INFO 2022-04-20 06:02:49,628 autoreload 15202 140577539450688 /home/tracy/tracy_git_test/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2022-04-20 06:02:52,250 autoreload 15349 140452617774912 Watching for file changes with StatReloader
+INFO 2022-04-20 06:20:20,215 autoreload 15702 140252703250240 Watching for file changes with StatReloader
+WARNING 2022-04-20 06:21:25,722 log 15702 140252258244352 Not Found: /
+WARNING 2022-04-20 06:21:25,726 basehttp 15702 140252258244352 "GET / HTTP/1.1" 404 2929
+WARNING 2022-04-20 06:21:26,410 log 15702 140252258244352 Not Found: /favicon.ico
+WARNING 2022-04-20 06:21:26,411 basehttp 15702 140252258244352 "GET /favicon.ico HTTP/1.1" 404 2980
+INFO 2022-04-20 06:21:51,113 basehttp 15702 140252258244352 "GET /image/12345/count/ HTTP/1.1" 200 2929
+INFO 2022-04-20 06:23:50,550 basehttp 15702 140252258244352 "GET /sms/13812341234/?image_code=7zy4&image_code_id=12345/ HTTP/1.1" 200 69
+INFO 2022-04-20 06:24:04,548 basehttp 15702 140252249851648 "GET /image/12345/count/ HTTP/1.1" 200 3244
+INFO 2022-04-20 06:24:18,276 basehttp 15702 140252258244352 "GET /sms/13812341234/?image_code=hwwm&image_code_id=12345/ HTTP/1.1" 200 69
+INFO 2022-04-20 06:28:47,965 autoreload 16404 140313281664832 Watching for file changes with StatReloader
+INFO 2022-04-20 06:29:05,904 basehttp 16404 140312970856192 "GET /image/12345/count/ HTTP/1.1" 200 2963
+INFO 2022-04-20 06:30:58,574 autoreload 16638 140085747926848 Watching for file changes with StatReloader
+INFO 2022-04-20 06:31:04,213 basehttp 16638 140085302896384 "GET /image/12345/count/ HTTP/1.1" 200 3180
+INFO 2022-04-20 06:31:18,907 basehttp 16638 140085294503680 "GET /sms/13812341234/?image_code=pduz&image_code_id=12345 HTTP/1.1" 200 31
+INFO 2022-04-20 07:00:14,298 autoreload 17127 140684049356608 Watching for file changes with StatReloader
+INFO 2022-04-20 07:00:22,208 basehttp 17127 140683599935232 "GET /image/12345/count/ HTTP/1.1" 200 3188
+INFO 2022-04-20 07:00:38,132 basehttp 17127 140683591542528 "GET /sms/13812341234/?image_code=nk6r&image_code_id=12345 HTTP/1.1" 200 31
+INFO 2022-04-20 07:00:40,748 basehttp 17127 140683591542528 "GET /sms/13812341234/?image_code=nk6r&image_code_id=12345 HTTP/1.1" 200 57
+INFO 2022-04-20 07:01:19,059 basehttp 17127 140683591542528 "GET /sms/13812341234/?image_code=nk6r&image_code_id=12345 HTTP/1.1" 200 57
+INFO 2022-04-20 07:01:24,830 basehttp 17127 140683591542528 "GET /sms/13812341234/?image_code=nk6r&image_code_id=12345 HTTP/1.1" 200 57
+INFO 2022-04-20 07:01:42,666 basehttp 17127 140683591542528 "GET /sms/13812341234/?image_code=nk6r&image_code_id=12345 HTTP/1.1" 200 31
+INFO 2022-04-20 07:14:44,055 autoreload 17601 140545999525696 Watching for file changes with StatReloader
+INFO 2022-04-20 07:14:48,288 basehttp 17601 140545487271680 "GET /image/12345/count/ HTTP/1.1" 200 3435
+INFO 2022-04-20 07:14:59,368 basehttp 17601 140545478878976 "GET /sms/13812341234/?image_code=dqyp&image_code_id=12345 HTTP/1.1" 200 31
