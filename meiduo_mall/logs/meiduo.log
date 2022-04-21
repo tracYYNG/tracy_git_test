@@ -305,3 +305,321 @@ INFO 2022-04-21 07:17:14,372 autoreload 7001 139823205881664 /home/tracy/tracy_g
 INFO 2022-04-21 07:17:15,292 autoreload 7321 140180488230720 Watching for file changes with StatReloader
 INFO 2022-04-21 07:17:22,622 basehttp 7321 140180347463424 "GET /image/12345/count/ HTTP/1.1" 200 3039
 INFO 2022-04-21 07:17:37,262 basehttp 7321 140180338808576 "GET /sms/13812341234/?image_code=37nj&image_code_id=12345 HTTP/1.1" 200 31
+INFO 2022-04-21 07:53:05,504 autoreload 3791 140597185537856 Watching for file changes with StatReloader
+ERROR 2022-04-21 07:54:58,682 log 3791 140596740556544 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: as_view() takes 1 positional argument but 2 were given
+ERROR 2022-04-21 07:54:58,685 basehttp 3791 140596740556544 "POST /authorizations/ HTTP/1.1" 500 62866
+INFO 2022-04-21 07:58:52,247 autoreload 3791 140597185537856 /home/tracy/tracy_git_test/meiduo_mall/apps/user/urls.py changed, reloading.
+INFO 2022-04-21 07:58:54,628 autoreload 4223 140434999752512 Watching for file changes with StatReloader
+INFO 2022-04-21 07:58:59,397 basehttp 4223 140434484279040 "POST /authorizations/ HTTP/1.1" 200 27
+INFO 2022-04-21 07:59:11,820 basehttp 4223 140434484279040 "POST /authorizations/ HTTP/1.1" 200 69
+INFO 2022-04-21 08:06:58,805 autoreload 4223 140434999752512 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 08:07:00,559 autoreload 4409 140324137613120 Watching for file changes with StatReloader
+INFO 2022-04-21 08:07:32,069 basehttp 4409 140323625367296 "POST /authorizations/ HTTP/1.1" 200 27
+INFO 2022-04-21 08:11:20,486 autoreload 4409 140324137613120 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 08:11:22,246 autoreload 4544 140372208981824 Watching for file changes with StatReloader
+INFO 2022-04-21 08:11:46,877 autoreload 4544 140372208981824 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 08:11:48,686 autoreload 4619 140452892706624 Watching for file changes with StatReloader
+INFO 2022-04-21 08:13:12,331 autoreload 4619 140452892706624 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 08:13:14,407 autoreload 4717 139622065022784 Watching for file changes with StatReloader
+INFO 2022-04-21 08:17:26,919 basehttp 4717 139621754205952 "POST /authorizations/ HTTP/1.1" 200 69
+INFO 2022-04-21 08:17:35,328 basehttp 4717 139621754205952 "POST /authorizations/ HTTP/1.1" 200 69
+INFO 2022-04-21 08:17:40,053 basehttp 4717 139621754205952 "POST /authorizations/ HTTP/1.1" 200 69
+INFO 2022-04-21 08:17:51,481 basehttp 4717 139621754205952 "POST /authorizations/ HTTP/1.1" 200 69
+INFO 2022-04-21 08:18:00,322 basehttp 4717 139621754205952 "POST /authorizations/ HTTP/1.1" 200 69
+INFO 2022-04-21 08:19:02,799 basehttp 4717 139621754205952 "POST /authorizations/ HTTP/1.1" 200 69
+INFO 2022-04-21 08:19:05,864 basehttp 4717 139621754205952 "POST /authorizations/ HTTP/1.1" 200 69
+INFO 2022-04-21 08:19:08,564 basehttp 4717 139621754205952 "POST /authorizations/ HTTP/1.1" 200 69
+INFO 2022-04-21 08:19:11,411 basehttp 4717 139621754205952 "POST /authorizations/ HTTP/1.1" 200 69
+INFO 2022-04-21 08:22:02,163 autoreload 4717 139622065022784 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 08:22:03,938 autoreload 5085 139722301323072 Watching for file changes with StatReloader
+INFO 2022-04-21 08:27:44,474 autoreload 5085 139722301323072 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 08:27:46,386 autoreload 5202 140559895484224 Watching for file changes with StatReloader
+ERROR 2022-04-21 08:28:02,451 log 5202 140559381427968 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 91, in post
+    user = User.objects.get(username)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1339, in build_filter
+    arg, value = filter_expr
+ValueError: too many values to unpack (expected 2)
+ERROR 2022-04-21 08:28:02,455 basehttp 5202 140559381427968 "POST /authorizations/ HTTP/1.1" 500 113132
+INFO 2022-04-21 08:29:09,252 autoreload 5202 140559895484224 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 08:29:10,997 autoreload 5347 140025252493120 Watching for file changes with StatReloader
+ERROR 2022-04-21 08:29:14,727 log 5347 140024941725440 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 91, in post
+    user = User.objects.get(username)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1339, in build_filter
+    arg, value = filter_expr
+ValueError: too many values to unpack (expected 2)
+ERROR 2022-04-21 08:29:14,731 basehttp 5347 140024941725440 "POST /authorizations/ HTTP/1.1" 500 113134
+INFO 2022-04-21 08:30:32,784 autoreload 5347 140025252493120 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 08:30:34,649 autoreload 5483 140536523036480 Watching for file changes with StatReloader
+ERROR 2022-04-21 08:30:39,323 log 5483 140536077989632 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 99, in post
+    if user is None:
+NameError: name 'user' is not defined
+ERROR 2022-04-21 08:30:39,327 basehttp 5483 140536077989632 "POST /authorizations/ HTTP/1.1" 500 76495
+ERROR 2022-04-21 08:30:42,243 log 5483 140536077989632 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 99, in post
+    if user is None:
+NameError: name 'user' is not defined
+ERROR 2022-04-21 08:30:42,245 basehttp 5483 140536077989632 "POST /authorizations/ HTTP/1.1" 500 76495
+INFO 2022-04-21 08:30:53,309 autoreload 5483 140536523036480 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 08:30:55,054 autoreload 5600 140051130144576 Watching for file changes with StatReloader
+INFO 2022-04-21 08:32:18,624 autoreload 5600 140051130144576 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 08:32:20,420 autoreload 5699 140372126684992 Watching for file changes with StatReloader
+ERROR 2022-04-21 08:32:31,091 log 5699 140371677935360 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 91, in post
+    user = User.objects.get(username)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1339, in build_filter
+    arg, value = filter_expr
+ValueError: too many values to unpack (expected 2)
+ERROR 2022-04-21 08:32:31,095 basehttp 5699 140371677935360 "POST /authorizations/ HTTP/1.1" 500 113134
+INFO 2022-04-21 08:32:36,883 autoreload 5699 140372126684992 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 08:32:38,796 autoreload 5827 140182728378176 Watching for file changes with StatReloader
+ERROR 2022-04-21 08:32:55,660 log 5827 140182283396864 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 109, in post
+    response.set_cookie('username',username)
+AttributeError: module 'django.http.response' has no attribute 'set_cookie'
+ERROR 2022-04-21 08:32:55,663 basehttp 5827 140182283396864 "POST /authorizations/ HTTP/1.1" 500 76595
+INFO 2022-04-21 08:33:30,525 autoreload 5827 140182728378176 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 08:33:32,452 autoreload 5952 140268049205056 Watching for file changes with StatReloader
+INFO 2022-04-21 08:33:35,691 basehttp 5952 140267738433280 "POST /authorizations/ HTTP/1.1" 200 27
+INFO 2022-04-21 08:33:44,813 autoreload 5952 140268049205056 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 08:33:46,587 autoreload 6061 140429332113216 Watching for file changes with StatReloader
+ERROR 2022-04-21 08:33:49,703 log 6061 140428887131904 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 91, in post
+    user = User.objects.get(username)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1339, in build_filter
+    arg, value = filter_expr
+ValueError: too many values to unpack (expected 2)
+ERROR 2022-04-21 08:33:49,707 basehttp 6061 140428887131904 "POST /authorizations/ HTTP/1.1" 500 113134
+INFO 2022-04-21 08:35:36,326 autoreload 6061 140429332113216 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 08:35:37,943 autoreload 6152 139882470672192 Watching for file changes with StatReloader
+INFO 2022-04-21 08:35:41,872 autoreload 6152 139882470672192 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 08:35:43,554 autoreload 6219 140592759568192 Watching for file changes with StatReloader
+ERROR 2022-04-21 08:35:47,779 log 6219 140592314545920 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 92, in post
+    user = User.objects.get(name='username')
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1342, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1156, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1640, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'name' into field. Choices are: date_joined, email, first_name, groups, id, is_active, is_staff, is_superuser, last_login, last_name, logentry, mobiles, password, user_permissions, username
+ERROR 2022-04-21 08:35:47,786 basehttp 6219 140592314545920 "POST /authorizations/ HTTP/1.1" 500 124923
+INFO 2022-04-21 08:36:22,811 autoreload 6219 140592759568192 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 08:36:24,652 autoreload 6317 140160749426496 Watching for file changes with StatReloader
+INFO 2022-04-21 08:36:28,733 basehttp 6317 140160438634240 "POST /authorizations/ HTTP/1.1" 200 27
+INFO 2022-04-21 08:39:04,171 autoreload 6317 140160749426496 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 08:39:06,008 autoreload 6492 140668470208320 Watching for file changes with StatReloader
+INFO 2022-04-21 08:39:23,328 autoreload 6492 140668470208320 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 08:39:25,023 autoreload 6566 139984646821696 Watching for file changes with StatReloader
+ERROR 2022-04-21 08:39:28,254 log 6566 139984470271744 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 98, in post
+    print(user.check_password())
+TypeError: check_password() missing 1 required positional argument: 'raw_password'
+ERROR 2022-04-21 08:39:28,257 basehttp 6566 139984470271744 "POST /authorizations/ HTTP/1.1" 500 76836
+INFO 2022-04-21 08:39:52,893 autoreload 6566 139984646821696 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 08:39:54,566 autoreload 6658 140349286401856 Watching for file changes with StatReloader
+INFO 2022-04-21 08:39:57,992 basehttp 6658 140348841346816 "POST /authorizations/ HTTP/1.1" 200 27
+INFO 2022-04-21 08:45:04,560 autoreload 6658 140349286401856 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 08:45:06,471 autoreload 6804 140414285895488 Watching for file changes with StatReloader
+INFO 2022-04-21 08:45:09,580 basehttp 6804 140413975131904 "POST /authorizations/ HTTP/1.1" 200 27
+INFO 2022-04-21 08:49:57,693 autoreload 7043 140349248141120 Watching for file changes with StatReloader
+INFO 2022-04-21 08:50:21,386 basehttp 7043 140349071570688 "POST /authorizations/ HTTP/1.1" 200 69
+INFO 2022-04-21 08:50:39,734 autoreload 7221 140494558455616 Watching for file changes with StatReloader
+INFO 2022-04-21 08:54:11,580 basehttp 7221 140494113453824 "POST /authorizations/ HTTP/1.1" 200 69
+INFO 2022-04-21 08:54:18,826 basehttp 7221 140494113453824 "POST /authorizations/ HTTP/1.1" 200 69
+INFO 2022-04-21 08:54:25,174 basehttp 7221 140494113453824 "POST /authorizations/ HTTP/1.1" 200 69
+INFO 2022-04-21 08:54:38,951 basehttp 7221 140494113453824 "POST /authorizations/ HTTP/1.1" 200 69
+INFO 2022-04-21 08:55:25,032 basehttp 7221 140494113453824 "POST /authorizations/ HTTP/1.1" 200 69
+INFO 2022-04-21 08:55:31,842 basehttp 7221 140494113453824 "POST /authorizations/ HTTP/1.1" 200 69
+INFO 2022-04-21 08:56:50,651 basehttp 7221 140494113453824 "POST /user/ HTTP/1.1" 200 27
+WARNING 2022-04-21 08:57:50,849 base 7221 140494113453824 Method Not Allowed (GET): /authorizations/
+WARNING 2022-04-21 08:57:50,850 log 7221 140494113453824 Method Not Allowed: /authorizations/
+WARNING 2022-04-21 08:57:50,852 basehttp 7221 140494113453824 "GET /authorizations/ HTTP/1.1" 405 0
+WARNING 2022-04-21 08:58:56,471 base 7221 140494113453824 Method Not Allowed (GET): /authorizations/
+WARNING 2022-04-21 08:58:56,472 log 7221 140494113453824 Method Not Allowed: /authorizations/
+WARNING 2022-04-21 08:58:56,474 basehttp 7221 140494113453824 "GET /authorizations/ HTTP/1.1" 405 0
+INFO 2022-04-21 09:02:11,230 autoreload 7871 140482082895680 Watching for file changes with StatReloader
+ERROR 2022-04-21 09:02:14,348 log 7871 140481637914368 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 110, in post
+    response.set_cookie('username',username)
+AttributeError: module 'django.http.response' has no attribute 'set_cookie'
+ERROR 2022-04-21 09:02:14,354 basehttp 7871 140481637914368 "POST /authorizations/ HTTP/1.1" 500 77219
+INFO 2022-04-21 09:04:12,839 autoreload 7871 140482082895680 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 09:04:14,785 autoreload 7959 140454829008704 Watching for file changes with StatReloader
+INFO 2022-04-21 09:04:17,902 basehttp 7959 140454518220544 "POST /authorizations/ HTTP/1.1" 200 27
+INFO 2022-04-21 09:05:33,316 autoreload 7959 140454829008704 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 09:05:35,074 autoreload 8076 140310296274752 Watching for file changes with StatReloader
+INFO 2022-04-21 09:05:40,329 basehttp 8076 140309851289344 "POST /authorizations/ HTTP/1.1" 200 27
+INFO 2022-04-21 09:05:57,752 autoreload 8076 140310296274752 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 09:05:59,579 autoreload 8189 139813066393408 Watching for file changes with StatReloader
+INFO 2022-04-21 09:06:07,603 autoreload 8189 139813066393408 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-21 09:06:09,419 autoreload 8263 139900781946688 Watching for file changes with StatReloader

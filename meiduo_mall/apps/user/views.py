@@ -1,12 +1,13 @@
 import json
 import re
+
 from django.http import JsonResponse
-from django.shortcuts import render
+
 from django.views import View
 
 from apps.user.models import User
 
-from django.contrib.auth import login
+from django.contrib.auth import login,authenticate
 
 # Create your views here.
 
@@ -72,3 +73,45 @@ class RegisterView(View):
         login(request,user)
 
         return JsonResponse({'code':0,'errmsg':'ok'})
+
+"""
+登陆需求分析
+接受请求：username，password
+逻辑处理：验证用户名，密码是否正确
+返回响应：json
+"""
+class LoginView(View):
+
+    def post(self,request):
+        body_json = json.loads(request.body.decode())
+
+        username = body_json.get('username')
+        password = body_json.get('password')
+        remembered = body_json.get('remembered')
+
+        # user = User.objects.get(id=1)
+
+        if not all([username,password]):
+            return JsonResponse({'code':400,'errmsg':'参数不全'})
+
+        user = authenticate(username=username,password=password)
+        # print(user.check_password(user.password))
+
+        if user is None:
+            return JsonResponse({'code':400,'errmsg':'账号或密码错误'})
+
+        login(request,user)
+
+        # 是否记录登陆
+        if remembered == False:
+            request.session.set_expiry(0)
+
+        # 生成cookie 实现用户登陆显示
+        response = JsonResponse({'code':0,'errmsg':'ok'})
+        response.set_cookie('username',username)
+        return response
+
+
+        
+
+
