@@ -293,3 +293,15 @@ INFO 2022-04-20 07:01:42,666 basehttp 17127 140683591542528 "GET /sms/1381234123
 INFO 2022-04-20 07:14:44,055 autoreload 17601 140545999525696 Watching for file changes with StatReloader
 INFO 2022-04-20 07:14:48,288 basehttp 17601 140545487271680 "GET /image/12345/count/ HTTP/1.1" 200 3435
 INFO 2022-04-20 07:14:59,368 basehttp 17601 140545478878976 "GET /sms/13812341234/?image_code=dqyp&image_code_id=12345 HTTP/1.1" 200 31
+INFO 2022-04-21 07:09:58,050 autoreload 6712 140587848652608 Watching for file changes with StatReloader
+INFO 2022-04-21 07:14:11,109 autoreload 6712 140587848652608 /home/tracy/tracy_git_test/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2022-04-21 07:14:11,745 autoreload 6987 140226228377408 Watching for file changes with StatReloader
+INFO 2022-04-21 07:14:34,217 autoreload 7001 139823205881664 Watching for file changes with StatReloader
+WARNING 2022-04-21 07:15:00,947 log 7001 139823062972160 Not Found: /
+WARNING 2022-04-21 07:15:00,947 basehttp 7001 139823062972160 "GET / HTTP/1.1" 404 2929
+INFO 2022-04-21 07:15:37,956 basehttp 7001 139823062972160 "GET /image/12345/count/ HTTP/1.1" 200 3092
+INFO 2022-04-21 07:15:54,100 basehttp 7001 139823054579456 "GET /sms/13812341234/?image_code=fjya&image_code_id=12345 HTTP/1.1" 200 31
+INFO 2022-04-21 07:17:14,372 autoreload 7001 139823205881664 /home/tracy/tracy_git_test/meiduo_mall/celery_tasks/sms/tasks.py changed, reloading.
+INFO 2022-04-21 07:17:15,292 autoreload 7321 140180488230720 Watching for file changes with StatReloader
+INFO 2022-04-21 07:17:22,622 basehttp 7321 140180347463424 "GET /image/12345/count/ HTTP/1.1" 200 3039
+INFO 2022-04-21 07:17:37,262 basehttp 7321 140180338808576 "GET /sms/13812341234/?image_code=37nj&image_code_id=12345 HTTP/1.1" 200 31

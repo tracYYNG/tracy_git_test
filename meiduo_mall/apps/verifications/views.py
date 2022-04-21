@@ -2,6 +2,7 @@ import json
 from random import randint
 from django.http import HttpResponse, JsonResponse
 from django.views import View
+from celery_tasks.sms.tasks import celery_send_sms_code
 from libs.captcha.captcha import captcha
 from django_redis import get_redis_connection
 
@@ -56,6 +57,9 @@ class SmsCodeView(View):
         pipeline.setex('send_flag%s'%mobile,60,1)
 
         pipeline.execute()
+
+        # celery 将方法放入消息队列
+        celery_send_sms_code(sms_code)
 
         # 发送验证码
         return JsonResponse({'code':0,'errmsg':sms_code})
