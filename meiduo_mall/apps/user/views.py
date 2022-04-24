@@ -1,5 +1,6 @@
 import json
 import re
+from urllib import request, response
 
 from django.http import JsonResponse
 
@@ -7,7 +8,7 @@ from django.views import View
 
 from apps.user.models import User
 
-from django.contrib.auth import login,authenticate
+from django.contrib.auth import login,authenticate,logout
 
 # Create your views here.
 
@@ -96,7 +97,7 @@ class LoginView(View):
 
         user = authenticate(username=username,password=password)
         # print(user.check_password(user.password))
-
+        
         if user is None:
             return JsonResponse({'code':400,'errmsg':'账号或密码错误'})
 
@@ -111,7 +112,15 @@ class LoginView(View):
         response.set_cookie('username',username)
         return response
 
+class LogoutView(View):
 
+    def delete(self,request):
+        logout(request)
+
+        response = JsonResponse({'code':0,'errmsg':'ok'})
+        response.delete_cookie('username')
+        return response
+    
         
 
 

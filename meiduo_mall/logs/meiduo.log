@@ -623,3 +623,8 @@ INFO 2022-04-21 09:05:57,752 autoreload 8076 140310296274752 /home/tracy/tracy_g
 INFO 2022-04-21 09:05:59,579 autoreload 8189 139813066393408 Watching for file changes with StatReloader
 INFO 2022-04-21 09:06:07,603 autoreload 8189 139813066393408 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
 INFO 2022-04-21 09:06:09,419 autoreload 8263 139900781946688 Watching for file changes with StatReloader
+INFO 2022-04-24 06:01:52,585 autoreload 4765 140563527849792 Watching for file changes with StatReloader
+INFO 2022-04-24 06:02:31,868 basehttp 4765 140563351295744 "POST /authorizations/ HTTP/1.1" 200 27
+INFO 2022-04-24 06:03:42,182 basehttp 4765 140563351295744 "DELETE /logout/ HTTP/1.1" 200 27
+INFO 2022-04-24 06:04:57,281 autoreload 4765 140563527849792 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-24 06:04:59,165 autoreload 5137 139666738964288 Watching for file changes with StatReloader

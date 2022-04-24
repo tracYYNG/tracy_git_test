@@ -1,6 +1,6 @@
 
 from django.urls import path, register_converter
-from apps.user.views import MobileCountView, RegisterView, UsernameCountView,LoginView
+from apps.user.views import MobileCountView, RegisterView, UsernameCountView,LoginView,LogoutView
 
 from utils.converter import UserConverter,MobileConverter
 
@@ -24,4 +24,5 @@ urlpatterns = [
     path('mobiles/<mobile:mobiles>/count/',MobileCountView.as_view()),
     path('user/',RegisterView.as_view()),
     path('authorizations/',LoginView.as_view()),
+    path('logout/',LogoutView.as_view()),
 ]
