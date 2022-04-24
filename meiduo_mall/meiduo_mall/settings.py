@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.user',
     'apps.verifications',
+    'apps.oauth'
 ]
 
 MIDDLEWARE = [
@@ -203,3 +204,7 @@ LOGGING = {
 
 # 替换系统user表
 AUTH_USER_MODEL = 'user.User'
+
+QQ_CLIENT_ID='101474184'  
+QQ_CLIENT_SECRET = 'c6ce949e04e12ecc909ae6a8b09b637c'
+QQ_REDIRECT_URL = 'http://127.0.0.1:8000/oauth_callback.html'

@@ -628,3 +628,79 @@ INFO 2022-04-24 06:02:31,868 basehttp 4765 140563351295744 "POST /authorizations
 INFO 2022-04-24 06:03:42,182 basehttp 4765 140563351295744 "DELETE /logout/ HTTP/1.1" 200 27
 INFO 2022-04-24 06:04:57,281 autoreload 4765 140563527849792 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
 INFO 2022-04-24 06:04:59,165 autoreload 5137 139666738964288 Watching for file changes with StatReloader
+INFO 2022-04-24 07:09:48,133 autoreload 6581 140180714571584 Watching for file changes with StatReloader
+ERROR 2022-04-24 07:10:04,056 log 6581 140180269528832 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/oauth/views.py", line 11, in get
+    qq = OAuthQQ(
+TypeError: __init__() got an unexpected keyword argument 'tate'
+ERROR 2022-04-24 07:10:04,060 basehttp 6581 140180269528832 "GET /oauth/qq/authorization/ HTTP/1.1" 500 77099
+WARNING 2022-04-24 07:10:04,282 log 6581 140180269528832 Not Found: /favicon.ico
+INFO 2022-04-24 07:11:39,181 autoreload 6581 140180714571584 /home/tracy/tracy_git_test/meiduo_mall/apps/oauth/views.py changed, reloading.
+INFO 2022-04-24 07:11:40,957 autoreload 6716 139956011812672 Watching for file changes with StatReloader
+ERROR 2022-04-24 07:11:45,311 log 6716 139955566823168 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/oauth/views.py", line 15, in get
+    tate= xxxx
+NameError: name 'xxxx' is not defined
+ERROR 2022-04-24 07:11:45,314 basehttp 6716 139955566823168 "GET /oauth/qq/authorization/ HTTP/1.1" 500 76890
+INFO 2022-04-24 07:12:11,131 autoreload 6716 139956011812672 /home/tracy/tracy_git_test/meiduo_mall/apps/oauth/views.py changed, reloading.
+INFO 2022-04-24 07:12:12,988 autoreload 6829 140542739945280 Watching for file changes with StatReloader
+INFO 2022-04-24 07:12:15,700 basehttp 6829 140542429173504 "GET /oauth/qq/authorization/ HTTP/1.1" 200 182
+INFO 2022-04-24 07:22:56,870 autoreload 6829 140542739945280 /home/tracy/tracy_git_test/meiduo_mall/apps/oauth/views.py changed, reloading.
+INFO 2022-04-24 07:22:58,949 autoreload 7061 140604922468160 Watching for file changes with StatReloader
+INFO 2022-04-24 07:39:51,755 autoreload 7931 139719658383168 Watching for file changes with StatReloader
+INFO 2022-04-24 07:40:24,100 autoreload 8074 140314332723008 Watching for file changes with StatReloader
+WARNING 2022-04-24 07:41:42,626 base 8074 140313887553280 Method Not Allowed (DELETE): /oauth/qq/user/
+WARNING 2022-04-24 07:41:42,628 log 8074 140313887553280 Method Not Allowed: /oauth/qq/user/
+WARNING 2022-04-24 07:41:42,630 basehttp 8074 140313887553280 "DELETE /oauth/qq/user/?code=3D0195D33335A8CE183508F92E21AA83 HTTP/1.1" 405 0
+INFO 2022-04-24 07:42:40,819 basehttp 8074 140313887553280 "DELETE /oauth/qq/user?code=3D0195D33335A8CE183508F92E21AA83 HTTP/1.1" 301 0
+ERROR 2022-04-24 07:42:41,114 log 8074 140313887553280 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/oauth/views.py", line 39, in get
+    token = qq.get_access_token(code)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/QQLoginTool/QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+ERROR 2022-04-24 07:42:41,117 basehttp 8074 140313887553280 "GET /oauth/qq/user/?code=3D0195D33335A8CE183508F92E21AA83 HTTP/1.1" 500 82521
+INFO 2022-04-24 07:44:58,363 basehttp 8074 140313887553280 "DELETE /oauth/qq/user?code=3D0195D33335A8CE183508F92E21AA83 HTTP/1.1" 301 0
+ERROR 2022-04-24 07:45:29,792 log 8074 140313887553280 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/oauth/views.py", line 39, in get
+    token = qq.get_access_token(code)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/QQLoginTool/QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+ERROR 2022-04-24 07:45:29,798 basehttp 8074 140313887553280 "GET /oauth/qq/user/?code=3D0195D33335A8CE183508F92E21AA83 HTTP/1.1" 500 82521
