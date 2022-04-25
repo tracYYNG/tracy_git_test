@@ -704,3 +704,661 @@ Traceback (most recent call last):
     raise Exception('access_token获取失败')
 Exception: access_token获取失败
 ERROR 2022-04-24 07:45:29,798 basehttp 8074 140313887553280 "GET /oauth/qq/user/?code=3D0195D33335A8CE183508F92E21AA83 HTTP/1.1" 500 82521
+INFO 2022-04-25 07:10:46,722 autoreload 4915 140591157483328 Watching for file changes with StatReloader
+ERROR 2022-04-25 07:11:17,436 log 4915 140590712403712 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/utils/module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/utils/module_loading.py", line 16, in cached_import
+    return getattr(modules[module_path], class_name)
+AttributeError: module 'apps.user' has no attribute 'SendEmailView'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 129, in put
+    send_mail(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/mail/__init__.py", line 76, in send_mail
+    connection = connection or get_connection(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/mail/__init__.py", line 50, in get_connection
+    klass = import_string(backend or settings.EMAIL_BACKEND)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/utils/module_loading.py", line 32, in import_string
+    raise ImportError(
+ImportError: Module "apps.user" does not define a "SendEmailView" attribute/class
+ERROR 2022-04-25 07:11:17,439 basehttp 4915 140590712403712 "PUT /emails/ HTTP/1.1" 500 103107
+INFO 2022-04-25 07:12:47,479 autoreload 5182 140424047974208 Watching for file changes with StatReloader
+ERROR 2022-04-25 07:12:51,346 log 5182 140423602939648 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 129, in put
+    send_mail(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/mail/__init__.py", line 87, in send_mail
+    return mail.send()
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+AttributeError: 'SendEmailView' object has no attribute 'send_messages'
+ERROR 2022-04-25 07:12:51,350 basehttp 5182 140423602939648 "PUT /emails/ HTTP/1.1" 500 85435
+INFO 2022-04-25 07:17:40,072 autoreload 5386 139768750303040 Watching for file changes with StatReloader
+ERROR 2022-04-25 07:17:45,272 log 5386 139768235030272 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/utils/module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/utils/module_loading.py", line 16, in cached_import
+    return getattr(modules[module_path], class_name)
+AttributeError: module 'django.core.mail.backends.smtp' has no attribute 'EmailBacked'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 129, in put
+    send_mail(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/mail/__init__.py", line 76, in send_mail
+    connection = connection or get_connection(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/mail/__init__.py", line 50, in get_connection
+    klass = import_string(backend or settings.EMAIL_BACKEND)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/utils/module_loading.py", line 32, in import_string
+    raise ImportError(
+ImportError: Module "django.core.mail.backends.smtp" does not define a "EmailBacked" attribute/class
+ERROR 2022-04-25 07:17:45,279 basehttp 5386 139768235030272 "PUT /emails/ HTTP/1.1" 500 103492
+INFO 2022-04-25 07:18:13,637 autoreload 5386 139768750303040 /home/tracy/tracy_git_test/meiduo_mall/meiduo_mall/settings.py changed, reloading.
+INFO 2022-04-25 07:18:15,515 autoreload 5508 140490332669760 Watching for file changes with StatReloader
+ERROR 2022-04-25 07:18:20,713 log 5508 140489887672064 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 129, in put
+    send_mail(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/mail/__init__.py", line 87, in send_mail
+    return mail.send()
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 80, in open
+    self.connection = self.connection_class(
+  File "/usr/lib/python3.8/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.8/smtplib.py", line 310, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR 2022-04-25 07:18:20,727 basehttp 5508 140489887672064 "PUT /emails/ HTTP/1.1" 500 117222
+INFO 2022-04-25 07:22:51,874 autoreload 5688 140083373557568 Watching for file changes with StatReloader
+ERROR 2022-04-25 07:23:12,526 log 5688 140083062789888 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 129, in put
+    send_mail(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/mail/__init__.py", line 87, in send_mail
+    return mail.send()
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 80, in open
+    self.connection = self.connection_class(
+  File "/usr/lib/python3.8/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.8/smtplib.py", line 310, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR 2022-04-25 07:23:12,531 basehttp 5688 140083062789888 "PUT /emails/ HTTP/1.1" 500 117222
+INFO 2022-04-25 07:26:56,262 autoreload 5688 140083373557568 /home/tracy/tracy_git_test/meiduo_mall/meiduo_mall/settings.py changed, reloading.
+INFO 2022-04-25 07:26:58,167 autoreload 5822 139911897012032 Watching for file changes with StatReloader
+ERROR 2022-04-25 07:27:06,914 log 5822 139911445346048 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 129, in put
+    send_mail(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/mail/__init__.py", line 87, in send_mail
+    return mail.send()
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 80, in open
+    self.connection = self.connection_class(
+  File "/usr/lib/python3.8/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.8/smtplib.py", line 310, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR 2022-04-25 07:27:06,918 basehttp 5822 139911445346048 "PUT /emails/ HTTP/1.1" 500 117222
+INFO 2022-04-25 07:29:00,029 autoreload 5822 139911897012032 /home/tracy/tracy_git_test/meiduo_mall/meiduo_mall/settings.py changed, reloading.
+INFO 2022-04-25 07:29:01,867 autoreload 5980 140258979911488 Watching for file changes with StatReloader
+INFO 2022-04-25 07:29:05,951 autoreload 5980 140258979911488 /home/tracy/tracy_git_test/meiduo_mall/meiduo_mall/settings.py changed, reloading.
+INFO 2022-04-25 07:29:07,830 autoreload 6047 139863669352256 Watching for file changes with StatReloader
+INFO 2022-04-25 07:29:14,866 basehttp 6047 139863224334080 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2022-04-25 08:15:16,845 autoreload 6689 140431662327616 Watching for file changes with StatReloader
+ERROR 2022-04-25 08:15:38,213 log 6689 140431351555840 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 132, in put
+    token = create_token(request.user.id)
+TypeError: create_token() missing 1 required positional argument: 'user_id'
+ERROR 2022-04-25 08:15:38,217 basehttp 6689 140431351555840 "PUT /emails/ HTTP/1.1" 500 76071
+INFO 2022-04-25 08:18:06,680 basehttp 6689 140431351555840 "POST /authorizations/ HTTP/1.1" 200 27
+ERROR 2022-04-25 08:18:24,947 log 6689 140431351555840 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 132, in put
+    token = create_token(request.user.id)
+TypeError: create_token() missing 1 required positional argument: 'user_id'
+ERROR 2022-04-25 08:18:24,948 basehttp 6689 140431351555840 "PUT /emails/ HTTP/1.1" 500 76446
+INFO 2022-04-25 08:19:19,202 autoreload 6982 140397718423360 Watching for file changes with StatReloader
+WARNING 2022-04-25 08:20:05,089 base 6982 140397407635200 Method Not Allowed (PUT): /logout/
+WARNING 2022-04-25 08:20:05,092 log 6982 140397407635200 Method Not Allowed: /logout/
+WARNING 2022-04-25 08:20:05,094 basehttp 6982 140397407635200 "PUT /logout/ HTTP/1.1" 405 0
+WARNING 2022-04-25 08:20:12,235 base 6982 140397407635200 Method Not Allowed (GET): /logout/
+WARNING 2022-04-25 08:20:12,236 log 6982 140397407635200 Method Not Allowed: /logout/
+WARNING 2022-04-25 08:20:12,237 basehttp 6982 140397407635200 "GET /logout/ HTTP/1.1" 405 0
+INFO 2022-04-25 08:20:31,313 basehttp 6982 140397407635200 "DELETE /logout/ HTTP/1.1" 200 27
+INFO 2022-04-25 08:21:21,005 basehttp 6982 140397407635200 "POST /authorizations/ HTTP/1.1" 200 27
+WARNING 2022-04-25 08:21:44,140 base 6982 140397407635200 Method Not Allowed (POST): /emails/
+WARNING 2022-04-25 08:21:44,141 log 6982 140397407635200 Method Not Allowed: /emails/
+WARNING 2022-04-25 08:21:44,142 basehttp 6982 140397407635200 "POST /emails/ HTTP/1.1" 405 0
+ERROR 2022-04-25 08:22:05,377 log 6982 140397407635200 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 132, in put
+    token = create_token(request.user.id)
+TypeError: create_token() missing 1 required positional argument: 'user_id'
+ERROR 2022-04-25 08:22:05,379 basehttp 6982 140397407635200 "PUT /emails/ HTTP/1.1" 500 76446
+INFO 2022-04-25 08:30:47,094 autoreload 6982 140397718423360 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 08:30:49,358 autoreload 7741 139729942398784 Watching for file changes with StatReloader
+INFO 2022-04-25 08:30:53,515 autoreload 7741 139729942398784 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 08:30:55,228 autoreload 7803 140510613804864 Watching for file changes with StatReloader
+INFO 2022-04-25 08:31:20,738 autoreload 7948 140129962583872 Watching for file changes with StatReloader
+ERROR 2022-04-25 08:33:16,793 log 7948 140129414936320 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 132, in put
+    token = create_token(user_id)
+TypeError: create_token() missing 1 required positional argument: 'user_id'
+ERROR 2022-04-25 08:33:16,802 basehttp 7948 140129414936320 "PUT /emails/ HTTP/1.1" 500 76612
+INFO 2022-04-25 08:33:45,752 autoreload 8212 140621475063616 Watching for file changes with StatReloader
+ERROR 2022-04-25 08:33:55,467 log 8212 140621030070016 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 132, in put
+    token = create_token(user_id)
+TypeError: create_token() missing 1 required positional argument: 'user_id'
+ERROR 2022-04-25 08:33:55,475 basehttp 8212 140621030070016 "PUT /emails/ HTTP/1.1" 500 76612
+INFO 2022-04-25 08:35:14,707 autoreload 8411 139903222368064 Watching for file changes with StatReloader
+ERROR 2022-04-25 08:35:25,557 log 8411 139902777337600 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 132, in put
+    token = create_token(user_id)
+TypeError: create_token() missing 1 required positional argument: 'user_id'
+ERROR 2022-04-25 08:35:25,562 basehttp 8411 139902777337600 "PUT /emails/ HTTP/1.1" 500 76612
+INFO 2022-04-25 08:35:56,255 autoreload 8411 139903222368064 /home/tracy/tracy_git_test/meiduo_mall/apps/user/utils.py changed, reloading.
+INFO 2022-04-25 08:35:58,254 autoreload 8535 139789092439872 Watching for file changes with StatReloader
+INFO 2022-04-25 08:36:42,760 basehttp 8535 139788915832576 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2022-04-25 08:41:38,028 autoreload 8827 140415634118464 Watching for file changes with StatReloader
+INFO 2022-04-25 08:41:51,846 basehttp 8827 140415323342592 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2022-04-25 08:47:36,735 autoreload 9289 140082859452224 Watching for file changes with StatReloader
+INFO 2022-04-25 08:48:55,000 basehttp 9289 140082414434048 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2022-04-25 08:50:01,095 autoreload 9289 140082859452224 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 08:50:02,866 autoreload 9412 140638563432256 Watching for file changes with StatReloader
+INFO 2022-04-25 08:50:50,215 basehttp 9412 140638252656384 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2022-04-25 08:51:55,192 autoreload 9412 140638563432256 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 08:51:56,985 autoreload 9540 139722097477440 Watching for file changes with StatReloader
+INFO 2022-04-25 08:52:07,535 basehttp 9540 139721652352768 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2022-04-25 08:52:43,781 autoreload 9540 139722097477440 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 08:52:45,731 autoreload 9662 139655254132544 Watching for file changes with StatReloader
+INFO 2022-04-25 08:53:02,305 autoreload 9662 139655254132544 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 08:53:04,197 autoreload 9739 140354504238912 Watching for file changes with StatReloader
+INFO 2022-04-25 08:53:14,266 basehttp 9739 140354059257600 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2022-04-25 08:56:38,630 autoreload 9739 140354504238912 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 08:56:40,328 autoreload 9869 140146885838656 Watching for file changes with StatReloader
+ERROR 2022-04-25 08:56:47,016 log 9869 140146440832768 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 136, in put
+    send_mail(
+TypeError: send_mail() missing 1 required positional argument: 'message'
+ERROR 2022-04-25 08:56:47,019 basehttp 9869 140146440832768 "PUT /emails/ HTTP/1.1" 500 77317
+INFO 2022-04-25 08:56:54,922 autoreload 9869 140146885838656 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 08:56:56,539 autoreload 9981 140718403413824 Watching for file changes with StatReloader
+INFO 2022-04-25 08:57:22,364 autoreload 9981 140718403413824 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 08:57:24,326 autoreload 10047 140394640693056 Watching for file changes with StatReloader
+INFO 2022-04-25 08:57:27,158 basehttp 10047 140394195662592 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2022-04-25 09:00:05,512 autoreload 10047 140394640693056 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 09:00:07,360 autoreload 10147 139884179339072 Watching for file changes with StatReloader
+INFO 2022-04-25 09:00:22,847 autoreload 10147 139884179339072 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 09:00:24,467 autoreload 10223 140164616537920 Watching for file changes with StatReloader
+INFO 2022-04-25 09:01:00,834 autoreload 10390 140715559978816 Watching for file changes with StatReloader
+INFO 2022-04-25 09:01:09,415 basehttp 10390 140715114985216 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2022-04-25 09:04:12,162 autoreload 10390 140715559978816 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 09:04:13,903 autoreload 10508 140365658437440 Watching for file changes with StatReloader
+INFO 2022-04-25 09:04:24,617 basehttp 10508 140365213443840 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2022-04-25 09:06:47,883 autoreload 10508 140365658437440 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 09:06:49,643 autoreload 10642 140599810529088 Watching for file changes with StatReloader
+INFO 2022-04-25 09:07:00,054 autoreload 10642 140599810529088 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 09:07:01,785 autoreload 10716 139983105185600 Watching for file changes with StatReloader
+INFO 2022-04-25 09:07:20,421 autoreload 10716 139983105185600 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 09:07:22,262 autoreload 10790 140046746445632 Watching for file changes with StatReloader
+INFO 2022-04-25 09:07:29,868 basehttp 10790 140046301402880 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2022-04-25 09:07:56,510 autoreload 10790 140046746445632 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 09:07:58,140 autoreload 10899 139864967030592 Watching for file changes with StatReloader
+INFO 2022-04-25 09:08:04,278 autoreload 10899 139864967030592 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 09:08:05,911 autoreload 10961 140339813435200 Watching for file changes with StatReloader
+INFO 2022-04-25 09:08:15,182 basehttp 10961 140339368437504 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2022-04-25 09:08:52,857 autoreload 10961 140339813435200 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 09:08:54,558 autoreload 11070 140332056209216 Watching for file changes with StatReloader
+INFO 2022-04-25 09:08:59,562 basehttp 11070 140331535623936 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2022-04-25 09:09:51,373 autoreload 11258 140253138933568 Watching for file changes with StatReloader
+INFO 2022-04-25 09:09:56,053 basehttp 11258 140252626548480 "PUT /emails/ HTTP/1.1" 200 27
+WARNING 2022-04-25 09:10:05,351 log 11258 140252597004032 Not Found: /
+WARNING 2022-04-25 09:10:05,352 basehttp 11258 140252597004032 "GET /?token=eyJ1c2VyX2lkIjo2fQ.YmZlYw.4PvfT1koKPVM0zaxpyNtJxnuCWQ HTTP/1.1" 404 3790
+INFO 2022-04-25 09:14:23,039 autoreload 11258 140253138933568 /home/tracy/tracy_git_test/meiduo_mall/apps/user/utils.py changed, reloading.
+INFO 2022-04-25 09:14:24,879 autoreload 11458 140450715895616 Watching for file changes with StatReloader
+INFO 2022-04-25 09:26:00,195 autoreload 11840 139686098450240 Watching for file changes with StatReloader
+WARNING 2022-04-25 09:26:06,775 log 11840 139685653456640 Not Found: /
+WARNING 2022-04-25 09:26:06,777 basehttp 11840 139685653456640 "GET /?token=eyJ1c2VyX2lkIjo2fQ.YmZlYw.4PvfT1koKPVM0zaxpyNtJxnuCWQ HTTP/1.1" 404 3957
+INFO 2022-04-25 09:26:34,560 autoreload 11840 139686098450240 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 09:26:36,397 autoreload 11974 140581134100288 Watching for file changes with StatReloader
+ERROR 2022-04-25 09:26:40,703 log 11974 140580680701696 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 133, in put
+    token = create_token(user_id)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/utils.py", line 8, in create_token
+    return token.decode()
+AttributeError: 'str' object has no attribute 'decode'
+ERROR 2022-04-25 09:26:40,709 basehttp 11974 140580680701696 "PUT /emails/ HTTP/1.1" 500 80508
+INFO 2022-04-25 09:27:39,084 autoreload 11974 140581134100288 /home/tracy/tracy_git_test/meiduo_mall/apps/user/utils.py changed, reloading.
+INFO 2022-04-25 09:27:41,125 autoreload 12122 139653175719744 Watching for file changes with StatReloader
+INFO 2022-04-25 09:27:46,274 basehttp 12122 139652730500864 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2022-04-25 09:27:54,758 basehttp 12122 139652700862208 "GET /emails/verification/?token=eyJ1c2VyX2lkIjo2fQ.YmZpkA.w-fCQMrCdgGd4Hoepp2T7vRN7Eg HTTP/1.1" 200 37
+INFO 2022-04-25 09:31:37,170 autoreload 12122 139653175719744 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 09:31:39,348 autoreload 12453 139948845811520 Watching for file changes with StatReloader
+INFO 2022-04-25 09:43:51,385 autoreload 13759 140026640394048 Watching for file changes with StatReloader
+ERROR 2022-04-25 09:44:11,705 log 13759 140026565650176 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/serialization.py", line 39, in _reraise_errors
+    yield
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/utils/json.py", line 68, in dumps
+    return _dumps(s, cls=cls or _default_encoder,
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/utils/json.py", line 58, in default
+    return super().default(o)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type function is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 145, in put
+    celery_send_email.delay(send_mail)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/messaging.py", line 166, in publish
+    body, content_type, content_encoding = self._prepare(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/messaging.py", line 254, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/serialization.py", line 43, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/exceptions.py", line 21, in reraise
+    raise value.with_traceback(tb)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/serialization.py", line 39, in _reraise_errors
+    yield
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/utils/json.py", line 68, in dumps
+    return _dumps(s, cls=cls or _default_encoder,
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/utils/json.py", line 58, in default
+    return super().default(o)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+kombu.exceptions.EncodeError: Object of type function is not JSON serializable
+ERROR 2022-04-25 09:44:11,708 basehttp 13759 140026565650176 "PUT /emails/ HTTP/1.1" 500 221488
+ERROR 2022-04-25 09:46:10,726 log 13759 140026565650176 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/serialization.py", line 39, in _reraise_errors
+    yield
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/utils/json.py", line 68, in dumps
+    return _dumps(s, cls=cls or _default_encoder,
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/utils/json.py", line 58, in default
+    return super().default(o)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type function is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 145, in put
+    celery_send_email.delay(send_mail)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/messaging.py", line 166, in publish
+    body, content_type, content_encoding = self._prepare(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/messaging.py", line 254, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/serialization.py", line 43, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/exceptions.py", line 21, in reraise
+    raise value.with_traceback(tb)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/serialization.py", line 39, in _reraise_errors
+    yield
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/utils/json.py", line 68, in dumps
+    return _dumps(s, cls=cls or _default_encoder,
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/utils/json.py", line 58, in default
+    return super().default(o)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+kombu.exceptions.EncodeError: Object of type function is not JSON serializable
+ERROR 2022-04-25 09:46:10,728 basehttp 13759 140026565650176 "PUT /emails/ HTTP/1.1" 500 221488
+INFO 2022-04-25 09:46:33,919 autoreload 13838 140518257157952 Watching for file changes with StatReloader
+ERROR 2022-04-25 09:47:16,823 log 13838 140518109476608 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/serialization.py", line 39, in _reraise_errors
+    yield
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/utils/json.py", line 68, in dumps
+    return _dumps(s, cls=cls or _default_encoder,
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/utils/json.py", line 58, in default
+    return super().default(o)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type function is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 145, in put
+    celery_send_email.delay(send_mail)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/messaging.py", line 166, in publish
+    body, content_type, content_encoding = self._prepare(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/messaging.py", line 254, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/serialization.py", line 43, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/exceptions.py", line 21, in reraise
+    raise value.with_traceback(tb)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/serialization.py", line 39, in _reraise_errors
+    yield
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/utils/json.py", line 68, in dumps
+    return _dumps(s, cls=cls or _default_encoder,
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/kombu/utils/json.py", line 58, in default
+    return super().default(o)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+kombu.exceptions.EncodeError: Object of type function is not JSON serializable
+ERROR 2022-04-25 09:47:16,826 basehttp 13838 140518109476608 "PUT /emails/ HTTP/1.1" 500 221488
+INFO 2022-04-25 09:47:44,081 autoreload 13838 140518257157952 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 09:47:44,516 autoreload 13882 140102144624448 Watching for file changes with StatReloader
+INFO 2022-04-25 09:47:57,573 basehttp 13882 140102069880576 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2022-04-25 09:48:20,520 basehttp 13882 140102059652864 "GET /emails/verification/?token=eyJ1c2VyX2lkIjo2fQ.YmZuTQ.XDfWaiOLfeLK67DHIgMZvtdjtwY HTTP/1.1" 200 37
+INFO 2022-04-25 09:52:08,206 autoreload 13882 140102144624448 /home/tracy/tracy_git_test/meiduo_mall/apps/user/models.py changed, reloading.
+INFO 2022-04-25 09:52:08,644 autoreload 14043 140463343540032 Watching for file changes with StatReloader
+INFO 2022-04-25 09:53:14,874 autoreload 14043 140463343540032 /home/tracy/tracy_git_test/meiduo_mall/apps/user/models.py changed, reloading.
+INFO 2022-04-25 09:53:15,303 autoreload 14068 140048397166400 Watching for file changes with StatReloader
+INFO 2022-04-25 10:00:30,667 autoreload 14278 140446269724480 Watching for file changes with StatReloader
+ERROR 2022-04-25 10:00:41,869 log 14278 140445824628480 Internal Server Error: /emails/verification/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1988, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'dict'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py", line 156, in get
+    user = User.objects.get(id = user_id)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1412, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1242, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got {'user_id': 6}.
+ERROR 2022-04-25 10:00:41,874 basehttp 14278 140445824628480 "GET /emails/verification/?token=eyJ1c2VyX2lkIjo2fQ.YmZuTQ.XDfWaiOLfeLK67DHIgMZvtdjtwY HTTP/1.1" 500 138967
+INFO 2022-04-25 10:01:15,407 autoreload 14278 140446269724480 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
+INFO 2022-04-25 10:01:17,221 autoreload 14436 140166808631104 Watching for file changes with StatReloader
+INFO 2022-04-25 10:01:48,711 basehttp 14436 140166363649792 "GET /emails/verification/?token=eyJ1c2VyX2lkIjo2fQ.YmZuTQ.XDfWaiOLfeLK67DHIgMZvtdjtwY HTTP/1.1" 200 27

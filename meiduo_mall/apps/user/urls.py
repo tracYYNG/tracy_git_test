@@ -1,6 +1,6 @@
 
 from django.urls import path, register_converter
-from apps.user.views import MobileCountView, RegisterView, UsernameCountView,LoginView,LogoutView
+from apps.user.views import MobileCountView, RegisterView, SendEmailView, UsernameCountView,LoginView,LogoutView,CheckEmailVIew
 
 from utils.converter import UserConverter,MobileConverter
 
@@ -25,4 +25,7 @@ urlpatterns = [
     path('user/',RegisterView.as_view()),
     path('authorizations/',LoginView.as_view()),
     path('logout/',LogoutView.as_view()),
+    path('emails/',SendEmailView.as_view()),
+    path('emails/verification/',CheckEmailVIew.as_view()),
+
 ]

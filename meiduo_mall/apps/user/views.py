@@ -1,6 +1,7 @@
+from cgitb import reset
+from email import message
 import json
 import re
-from urllib import request, response
 
 from django.http import JsonResponse
 
@@ -9,6 +10,11 @@ from django.views import View
 from apps.user.models import User
 
 from django.contrib.auth import login,authenticate,logout
+
+from django.core.mail import send_mail
+
+from apps.user.utils import create_token,check_token
+from celery_tasks.email.tasks import celery_send_email
 
 # Create your views here.
 
@@ -121,6 +127,35 @@ class LogoutView(View):
         response.delete_cookie('username')
         return response
     
-        
+class SendEmailView(View):
 
+    def put(self,request):
+        user_id = request.user.id
+        token = create_token(user_id)
+        send_message = "点击链接进行激活<a href='http://127.0.0.1:8000/emails/verification/?token=%s'>激活</a>"%token
+
+
+        # send_mail(
+        #     subject='主题',
+        #     message='',
+        #     from_email='tracy<tracyshenzl@163.com>',
+        #     recipient_list=['582974285@qq.com'],
+        #     html_message=send_message
+        # )
+        celery_send_email.delay(send_message)
+
+        return JsonResponse({'code':0,'errmsg':'ok'})
+
+class CheckEmailVIew(View):
+
+    def get(self,request):
+        message = request.GET
+        token = message.get('token')
+        user_id = check_token(token).get('user_id')
+
+
+        user = User.objects.get(id = user_id)
+        user.email_active = True
+        user.save()
+        return JsonResponse({'code':0,'errmsg':'ok'})
 
