@@ -1362,3 +1362,45 @@ ERROR 2022-04-25 10:00:41,874 basehttp 14278 140445824628480 "GET /emails/verifi
 INFO 2022-04-25 10:01:15,407 autoreload 14278 140446269724480 /home/tracy/tracy_git_test/meiduo_mall/apps/user/views.py changed, reloading.
 INFO 2022-04-25 10:01:17,221 autoreload 14436 140166808631104 Watching for file changes with StatReloader
 INFO 2022-04-25 10:01:48,711 basehttp 14436 140166363649792 "GET /emails/verification/?token=eyJ1c2VyX2lkIjo2fQ.YmZuTQ.XDfWaiOLfeLK67DHIgMZvtdjtwY HTTP/1.1" 200 27
+INFO 2022-04-27 01:27:10,964 autoreload 4444 140021050197824 Watching for file changes with StatReloader
+WARNING 2022-04-27 01:27:17,498 base 4444 140020605196032 Method Not Allowed (PUT): /areas/
+WARNING 2022-04-27 01:27:17,500 log 4444 140020605196032 Method Not Allowed: /areas/
+WARNING 2022-04-27 01:27:17,503 basehttp 4444 140020605196032 "PUT /areas/ HTTP/1.1" 405 0
+INFO 2022-04-27 01:27:36,783 basehttp 4444 140020605196032 "GET /areas/ HTTP/1.1" 200 1689
+INFO 2022-04-27 01:35:28,650 autoreload 4444 140021050197824 /home/tracy/tracy_git_test/meiduo_mall/apps/areas/urls.py changed, reloading.
+INFO 2022-04-27 01:35:30,566 autoreload 4680 140463121286976 Watching for file changes with StatReloader
+INFO 2022-04-27 01:43:45,901 autoreload 6398 140645295937344 Watching for file changes with StatReloader
+WARNING 2022-04-27 01:43:51,505 log 6398 140644850956032 Not Found: /areas/1/
+WARNING 2022-04-27 01:43:51,507 basehttp 6398 140644850956032 "GET /areas/1/ HTTP/1.1" 404 4262
+INFO 2022-04-27 01:44:22,454 autoreload 6398 140645295937344 /home/tracy/tracy_git_test/meiduo_mall/apps/areas/urls.py changed, reloading.
+INFO 2022-04-27 01:44:24,162 autoreload 6501 139974274283328 Watching for file changes with StatReloader
+INFO 2022-04-27 01:44:31,852 basehttp 6501 139973829269248 "GET /areas/1/ HTTP/1.1" 200 718
+INFO 2022-04-27 01:45:16,700 basehttp 6501 139973829269248 "GET /areas/18/ HTTP/1.1" 200 720
+INFO 2022-04-27 01:46:25,308 basehttp 6501 139973829269248 "GET /areas/916/ HTTP/1.1" 200 516
+INFO 2022-04-27 01:46:36,941 basehttp 6501 139973829269248 "GET /areas/968/ HTTP/1.1" 200 300
+INFO 2022-04-27 01:47:00,143 autoreload 6501 139974274283328 /home/tracy/tracy_git_test/meiduo_mall/apps/areas/views.py changed, reloading.
+INFO 2022-04-27 01:47:01,889 autoreload 6753 140037230868288 Watching for file changes with StatReloader
+INFO 2022-04-27 01:59:13,716 autoreload 6977 140475503359808 Watching for file changes with StatReloader
+INFO 2022-04-27 01:59:30,847 basehttp 6977 140475058362112 "GET /areas/ HTTP/1.1" 200 1689
+INFO 2022-04-27 02:03:05,300 basehttp 6977 140475058362112 "GET /areas/ HTTP/1.1" 200 1689
+INFO 2022-04-27 02:03:35,182 basehttp 6977 140475058362112 "GET /areas/1/ HTTP/1.1" 200 718
+INFO 2022-04-27 02:05:54,456 autoreload 6977 140475503359808 /home/tracy/tracy_git_test/meiduo_mall/apps/areas/views.py changed, reloading.
+INFO 2022-04-27 02:05:56,174 autoreload 7393 140083337910080 Watching for file changes with StatReloader
+INFO 2022-04-27 02:08:07,253 autoreload 7550 139924361172800 Watching for file changes with StatReloader
+ERROR 2022-04-27 02:08:14,846 log 7550 139923916175104 Internal Server Error: /areas/1/
+Traceback (most recent call last):
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/tracy/.virtualenvs/test_env/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/tracy/tracy_git_test/meiduo_mall/apps/areas/views.py", line 31, in get
+    city_list = cache.get('city:%s')%hlevel_id
+TypeError: unsupported operand type(s) for %: 'NoneType' and 'str'
+ERROR 2022-04-27 02:08:14,865 basehttp 7550 139923916175104 "GET /areas/1/ HTTP/1.1" 500 76752
+INFO 2022-04-27 02:09:25,653 autoreload 7750 139823897442112 Watching for file changes with StatReloader
+INFO 2022-04-27 02:09:48,232 basehttp 7750 139823452452608 "GET /areas/1/ HTTP/1.1" 200 718
+INFO 2022-04-27 02:10:27,165 basehttp 7750 139823452452608 "GET /areas/1/ HTTP/1.1" 200 718
